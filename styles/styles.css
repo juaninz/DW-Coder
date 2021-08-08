@@ -1,0 +1,681 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Header y navegador*/
+header{
+    background: purple;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav li{
+    flex-grow: 1;
+    border-right: 0.2rem solid black;
+}
+
+nav li:hover{
+    background: #A871E7;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.btn {
+    display: none;
+    color: white;
+    background-color: purple; 
+    border: none; 
+    padding: 1rem 1rem; /* Some padding */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+.btn:hover{
+    background:#A871E7;
+}
+
+@media (max-width:768px){
+    .btn{
+        display:block
+    }
+
+    .btn:focus ~ nav{
+        margin:0;
+    }
+
+    nav{
+        position: absolute;
+        background:purple; 
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+        z-index: 50;
+    }
+
+    nav ul{
+        flex-direction: column;
+        
+    }
+
+    nav li{
+        border-top: 0.1rem solid black;
+        border-right: none;
+    }
+}
+
+/*Cabecera*/
+
+.cabecera{
+    background: url("../images/Estructura2.jpg") no-repeat;
+    height: 35rem;
+    background-size: cover;
+}
+
+
+.cabecera__texto {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 15rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    background-color: rgba(241, 128, 241, 0.5);
+    height: 35rem;
+    width: 100%;
+}
+
+
+/*nosotros*/
+
+
+/*seccion nosotros*/ 
+
+.nosotros{
+    background: linear-gradient(black,rgb(201, 87, 201));
+    font-family: 'Rubik', sans-serif;
+    color:white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.nosotros__imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+
+.nosotros__imagenes img{
+    width: 100%;
+    height: 15rem;
+}
+
+.nosotros__texto{
+    width: 65%;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin-left: 1.25rem;
+    padding: 2rem 0;
+}
+
+.nosotros__texto h1{
+    text-align: center;
+}
+
+.frase{
+    margin-top: 5rem;
+    font-size: 1.9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .nosotros{
+        flex-direction:column-reverse;
+        padding: 0.8rem 0;
+        align-content: center;
+    }
+
+    .nosotros__texto{
+        width: 80%;
+    }
+
+    .nosotros__imagenes{
+        align-content: center;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+}
+
+
+/*seccion objetivos*/
+
+.objetivos{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 87, 201);
+    font-size: 1.25rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.objetivos h2{
+    color: black;
+    font-weight: bold;
+    text-align: center;;
+}
+
+.objetivos div{
+    text-align: center;
+    padding: 0 0.5rem;
+}
+   
+.objetivos__mision{
+    border-right: 0.13rem solid black;
+}
+   
+.objetivos__vision{
+    border-right: 0.13rem solid black;
+}
+
+.objetivos__titulo{
+    display: flex;
+    justify-content: center;
+}
+
+
+.objetivos__titulo img{
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(90deg);
+}
+
+
+@media (max-width:768px){
+    .objetivos{
+        flex-direction:column;
+        padding: 0.8rem 0;
+        align-content: center;
+        width: 100vw;
+    }
+
+    .objetivos div{
+        padding: 0.8rem 0.8rem;
+    }
+
+    .objetivos__mision{
+        border-right: none;
+        }
+           
+    .objetivos__vision{
+        border-right: none;
+        }
+    }
+
+/*Menu de Servicios con imagenes*/ 
+.h2servicios{
+    padding: 2rem;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.servicios{
+    height: 15rem;
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.Galeria{
+    display: flex;
+    flex-direction: row;
+}
+
+.Galeria .imagen {
+    height: 15rem;
+    width:100% ;
+    position: relative;
+}
+
+.Galeria .imagen img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*efecto overlay*/ 
+
+.overlay{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(119, 52, 119,0.5);
+    width: 100%;
+    height: 0;
+    transition: .5 ease;
+    overflow:hidden;
+}
+
+.overlay h2{
+    color:white;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .servicios{
+        height: auto;
+    }
+
+    .Galeria{
+        flex-direction:column;
+        height: auto
+    }
+    
+}
+
+/*footer*/
+
+footer{
+    background: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-align: right;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+/*obra*/
+
+.pagobra{
+    background: linear-gradient(black,rgb(201, 87, 201));
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    padding: 2rem 2rem;
+    text-align: justify;
+}
+
+.infoObra h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.infoObra p{
+    font-size: 1.25rem;
+}
+
+.listaObra {
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+/*Grilla galeria de imagenes obras*/
+
+.ImagenesObra{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(2,13rem);
+    row-gap: 1rem;
+}
+
+.ImagenesObra img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px){
+    .ImagenesObra{
+        display:flex;
+        flex-direction: column;
+    }
+    
+}
+
+
+/*Estructuras*/
+
+.pagestructuras{
+    color: white;
+    background: linear-gradient(black,rgb(201, 87, 201));
+    font-family: 'Rubik', sans-serif;
+    text-align: justify;
+    padding: 2rem 2rem;
+}
+
+
+.EstructurasEncabezado h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.pagestructuras h2{
+    font-size: 1.9rem;
+}
+
+.pagestructuras p,.pagestructuras ul{
+    font-size: 1.25rem;
+}
+.TextoEstructuras p a{
+    color: red;
+}
+
+.Aviso{
+    background-color: rgb(87, 206, 87);
+    color:black;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.listaest {
+    padding: 1rem;
+}
+
+.imgEst{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 2rem;
+}
+
+.imgEst img{
+    height: 13rem;
+    width: 25%;
+}
+
+/*seccion software de estructuras*/
+
+.estsof{
+    margin-top: 2rem;
+}
+
+.estsof__list{
+    padding: 0 2rem;
+    margin-top: 0.625rem;
+    list-style-type:circle;
+}
+
+.estimgsoft{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:2rem 0;
+}
+
+.estimgsoft img{
+    height: 13rem;
+    width: 25%;
+}
+
+@media (max-width:768px){
+    .imgEst{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imgEst img{
+        width:100%
+    }
+    .estimgsoft{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .estimgsoft img{
+        width:100%
+    }
+    
+}
+
+/*hidraulica*/
+
+.paghid{
+    color:white;
+    padding: 2rem 2rem;
+    background: linear-gradient(black,rgb(201, 87, 201));
+    font-family: 'Rubik', sans-serif;
+}
+
+.articleinghid h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.paghid h2{
+    font-size: 1.9rem;
+}
+
+.paghid p,.paghid ul{
+    font-size: 1.25rem;
+}
+
+
+.listahidra {
+    padding: 1rem;
+}
+
+.imghidra{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.imghidra img{
+    height: 13rem;
+    width: 25%;
+}
+
+/*seccion software hidraulica*/
+.hidrasoft{
+    padding: 1rem 0;
+}
+
+.hidrasoft ul{
+    padding: 1rem;
+}
+
+.imgsofthid{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.imgsofthid img{
+    height: 13rem;
+    width: 25%;
+}
+
+@media (max-width:768px){
+    .imghidra{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .imghidra img{
+        width:100%;
+        padding: 1rem 0;
+    }
+    .imgsofthid{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .imgsofthid img{
+        width:100%;
+        padding: 1rem 0;
+    }
+    
+}
+
+/*contacto*/
+
+.contacto{
+    color:white;
+    padding: 2rem 2rem;
+    background: linear-gradient(black,rgb(201, 87, 201));
+    font-family: 'Rubik', sans-serif;
+}
+
+.contacto p{
+    font-size: 1.25rem;
+}
+
+/*formulario*/
+
+.formulario{
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.contacto h1{
+    font-size: 2.5rem;
+}
+
+.formulario__form{
+    background-color:rgb(87, 206, 87);
+    padding: 2rem;
+    width: 35rem;
+    border-radius: 1rem;
+
+}
+
+.camposarellenar input, textarea{
+    width: 100%;
+    margin: 0.625rem;
+}
+
+.camposarellenar input{
+    height: 2rem; 
+    border-radius: 0.5rem;  
+}
+
+.camposarellenar textarea{
+    height: 15rem;
+    border-radius: 0.5rem;  
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botones input{
+    margin: 1rem;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 1rem;
+}
+
+.botones input:hover{
+    background-color: rgb(31, 141, 31);
+}
+
+
+/*estilo al iframe*/
+
+.iframe{
+    height: 35rem;
+    width: 35rem;
+}
+
+.iframe iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+/*Bordes, fondo y color de letra de tabla*/
+.horarios{
+    margin: 2rem;
+    align-content: center;
+}
+
+.horarios__tabla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horarios__tabla h2{
+    color: black;
+    text-align: center;
+}
+
+table {
+    margin-top: 1rem;
+    color: black;
+    background-color:rgb(87, 206, 87);
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 0.0625rem solid black;
+    padding: 1rem;
+}
+
+@media (max-width:768px){
+    .formulario{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .formulario__form{
+        width: 80vw;
+    }
+
+    .iframe{
+        margin-top: 2rem;
+        height: 80vw;
+        width: 80vw;
+    }
+}
