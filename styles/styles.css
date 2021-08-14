@@ -11,7 +11,7 @@
 
 /*Header y navegador*/
 header{
-    background: purple;
+    background: rgb(143, 23, 143);
     font-family: 'Rubik', sans-serif;
 }
 
@@ -84,18 +84,13 @@ nav a{
 
 .cabecera{
     background: url("../images/Estructura2.jpg") no-repeat;
-    height: 35rem;
+    height: 25rem;
     background-size: cover;
 }
 
 
 .cabecera__texto {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    padding: 15rem 0;
+    padding: 10rem 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 2rem;
@@ -107,19 +102,21 @@ nav a{
 }
 
 
+
 /*nosotros*/
 
 
 /*seccion nosotros*/ 
 
 .nosotros{
-    background: linear-gradient(black,rgb(201, 87, 201));
+    background: black;
     font-family: 'Rubik', sans-serif;
     color:white;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
+    padding: 4rem 0;
 }
 
 
@@ -181,12 +178,12 @@ nav a{
 /*seccion objetivos*/
 
 .objetivos{
-    padding: 2rem;
+    padding: 4rem 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(201, 87, 201);
+    background-color:  rgb(143, 23, 143);
     font-size: 1.25rem;
     font-family: 'Rubik', sans-serif;
 }
@@ -307,6 +304,7 @@ nav a{
     cursor: pointer;
 }
 
+
 @media (max-width:768px){
     .servicios{
         height: auto;
@@ -343,6 +341,7 @@ footer{
 .infoObra h1{
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .infoObra p{
@@ -557,7 +556,7 @@ footer{
 .contacto{
     color:white;
     padding: 2rem 2rem;
-    background: linear-gradient(black,rgb(201, 87, 201));
+    background: black;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -580,7 +579,7 @@ footer{
 }
 
 .formulario__form{
-    background-color:rgb(87, 206, 87);
+    background-color:rgba(174, 15, 223, 0.856);
     padding: 2rem;
     width: 35rem;
     border-radius: 1rem;
@@ -606,32 +605,19 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 .botones input{
     margin: 1rem;
     height: 5rem;
     width: 10rem;
-    border-radius: 1rem;
 }
 
 .botones input:hover{
-    background-color: rgb(31, 141, 31);
+    background-color: #A871E7;
 }
 
-
-/*estilo al iframe*/
-
-.iframe{
-    height: 35rem;
-    width: 35rem;
-}
-
-.iframe iframe{
-    height: 100%;
-    width: 100%;
-    border-radius: 0.5rem;
-}
 /*Bordes, fondo y color de letra de tabla*/
 .horarios{
     margin: 2rem;
@@ -652,7 +638,7 @@ footer{
 table {
     margin-top: 1rem;
     color: black;
-    background-color:rgb(87, 206, 87);
+    background-color:rgba(174, 15, 223, 0.856);
     text-align: left;
     border-collapse: collapse;
 }
@@ -662,6 +648,19 @@ td {
     border: 0.0625rem solid black;
     padding: 1rem;
 }
+
+/*estilo al iframe*/
+
+.iframe{
+    height: 20rem;
+    width: 100%;
+}
+
+.iframe iframe{
+    height: 100%;
+    width: 100%;
+}
+
 
 @media (max-width:768px){
     .formulario{
@@ -674,8 +673,15 @@ td {
     }
 
     .iframe{
-        margin-top: 2rem;
         height: 80vw;
-        width: 80vw;
+        width: 100%;
     }
 }
+
+
+.footer-contacto{
+    background-color: rgba(174, 15, 223);
+    color: black;
+}
+
+
