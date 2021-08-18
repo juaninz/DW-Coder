@@ -164,6 +164,7 @@ nav a{
 
     .nosotros__texto{
         width: 80%;
+        text-align: center;
     }
 
     .nosotros__imagenes{
@@ -299,6 +300,10 @@ nav a{
     transform: translate(-50%,-50%);
 }
 
+.overlay-med{
+    display: none;
+}
+
 .imagen:hover .overlay{
     height: 100%;
     cursor: pointer;
@@ -314,7 +319,26 @@ nav a{
         flex-direction:column;
         height: auto
     }
-    
+
+    .imagen{
+        position: relative;
+    }
+
+    .overlay{
+     display:none;
+     }
+
+    .overlay-med{
+        background: rgba(211, 87, 201, 0.8);
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        color:black;
+        font-weight: 300;
+        font-size: 30px;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 /*footer*/
@@ -368,6 +392,9 @@ footer{
 }
 
 @media (max-width:768px){
+    .pagobra{
+        text-align: left;
+    }
     .ImagenesObra{
         display:flex;
         flex-direction: column;
@@ -451,6 +478,10 @@ footer{
 }
 
 @media (max-width:768px){
+    .pagestructuras{
+        text-align: left;
+    }
+
     .imgEst{
         flex-direction: column;
         width: 100%;
@@ -580,10 +611,10 @@ footer{
 
 .formulario__form{
     background-color:rgba(174, 15, 223, 0.856);
-    padding: 2rem;
     width: 35rem;
     border-radius: 1rem;
-
+    box-shadow: grey;
+    padding: 2rem;
 }
 
 .camposarellenar input, textarea{
@@ -593,12 +624,10 @@ footer{
 
 .camposarellenar input{
     height: 2rem; 
-    border-radius: 0.5rem;  
 }
 
 .camposarellenar textarea{
-    height: 15rem;
-    border-radius: 0.5rem;  
+    height: 15rem; 
 }
 
 .botones{
