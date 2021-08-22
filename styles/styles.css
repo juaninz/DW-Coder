@@ -560,74 +560,6 @@ footer{
     font-size: 2.5rem;
 }
 
-.formulario__form{
-    background-color:rgba(174, 15, 223, 0.856);
-    width: 35rem;
-    border-radius: 1rem;
-    box-shadow: grey;
-    padding: 2rem;
-}
-
-.camposarellenar input, textarea{
-    width: 100%;
-    margin: 0.625rem;
-}
-
-.camposarellenar input{
-    height: 2rem; 
-}
-
-.camposarellenar textarea{
-    height: 15rem; 
-}
-
-.botones{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: 'Rubik', sans-serif;
-}
-
-.botones input{
-    margin: 1rem;
-    height: 5rem;
-    width: 10rem;
-}
-
-.botones input:hover{
-    background-color: #A871E7;
-}
-
-/*Bordes, fondo y color de letra de tabla*/
-.horarios{
-    margin: 2rem;
-    align-content: center;
-}
-
-.horarios__tabla{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.horarios__tabla h2{
-    color: black;
-    text-align: center;
-}
-
-table {
-    margin-top: 1rem;
-    color: black;
-    background-color:rgba(174, 15, 223, 0.856);
-    text-align: left;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    border: 0.0625rem solid black;
-    padding: 1rem;
-}
 
 /*estilo al iframe*/
 
@@ -643,15 +575,7 @@ td {
 
 
 @media (max-width:768px){
-    .formulario{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .formulario__form{
-        width: 80vw;
-    }
-
+    
     .iframe{
         height: 80vw;
         width: 100%;
