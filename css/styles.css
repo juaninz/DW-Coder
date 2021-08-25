@@ -52,9 +52,8 @@ nav ul li:hover {
     color: black;
     font-weight: 900;
     font-size: 1.25rem;
-    line-height: 1.6;
     text-align: justify;
-    margin-left: 1.25rem;
+    margin: 1rem;
     padding: 2rem 1rem;
     z-index: 50;
     background-color: rgba(113, 44, 119, 0.7);
