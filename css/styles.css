@@ -261,7 +261,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 13rem);
-  row-gap: 1rem; }
+  /*row-gap: 1rem;*/ }
   .ImagenesObra img {
     width: 100%;
     height: 100%; }
@@ -378,14 +378,12 @@ footer {
     flex-direction: column;
     width: 100%; }
     .imghidra img {
-      width: 100%;
-      padding: 1rem 0; }
+      width: 100%; }
   .imgsofthid {
     flex-direction: column;
     width: 100%; }
     .imgsofthid img {
-      width: 100%;
-      padding: 1rem 0; } }
+      width: 100%; } }
 
 /*contacto*/
 .contacto {

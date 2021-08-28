@@ -369,7 +369,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 13rem);
-    row-gap: 1rem;
+    /*row-gap: 1rem;*/
 
     img {
         @include sizes(100%, 100%);
@@ -568,7 +568,6 @@ footer {
 
         img {
             width: 100%;
-            padding: 1rem 0;
         }
     }
 
@@ -578,7 +577,6 @@ footer {
 
         img {
             width: 100%;
-            padding: 1rem 0;
         }
     }
 }
