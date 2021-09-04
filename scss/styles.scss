@@ -84,7 +84,8 @@ nav ul li:hover {
     line-height: 1.5rem;
     color: white;
     .col-md-7{
-        border-left: solid 0.8rem white;
+        border-left: solid 0.5rem white;
+        height: auto;
     }
     .imgcon{
         width: 100%;
@@ -348,7 +349,7 @@ footer {
     }
 
     img:hover{
-        transform: scale(1.25);
+        transform: scale(1.15);
         transition: all 0.5s ease-out;;
     }
 }
@@ -426,7 +427,7 @@ footer {
     }
 
     img:hover{
-        transform: scale(1.25);
+        transform: scale(1.15);
         transition: all 0.5s ease-out;;
     }
 }
@@ -451,7 +452,7 @@ footer {
         @include sizes(25%, 13rem);
     }
     img:hover{
-        transform: scale(1.25);
+        transform: scale(1.15);
         transition: all 0.5s ease-out;;
     }
 }
@@ -529,7 +530,7 @@ footer {
     }
 
     img:hover{
-        transform: scale(1.25);
+        transform: scale(1.15);
         transition: all 0.5s ease-out;;
     }
 
@@ -570,7 +571,7 @@ footer {
             width: 100%;
         }
         img:hover{
-            transform: scale(1.25);
+            transform: scale(1.15);
             transition: all 0.5s ease-out;;
         }
     }
